@@ -1,0 +1,84 @@
+/* style.css */
+
+/* Reset default margin and padding */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.App-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.App-header h1 {
+  font-size: 2rem;
+}
+
+/* ProductList styles */
+.product-list {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.product-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.product-list ul {
+  list-style-type: none;
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Wrap items to the next row */
+  justify-content: space-between; /* Distribute space between items */
+  padding: 0; /* Remove default padding */
+}
+
+/* Style each product item */
+.product-list li {
+  flex-basis: calc(33.33% - 10px); /* 33.33% width for three items per row with a 10px gap */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  flex-direction: column; /* Arrange content in a column layout */
+}
+
+.product-list h3 {
+  font-size: 1.2rem;
+  margin-top: 10px; /* Add space between image and description */
+}
+
+.product-list p {
+  margin-top: 5px;
+}
+
+.product-list li img {
+  /* Styles for the images */
+  max-width: 50%; /* Allow the image to take the full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
